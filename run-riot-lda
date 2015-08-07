@@ -1,0 +1,4 @@
+#!/bin/sh
+
+$MALLET_HOME/bin/mallet import-dir --input "$DATA_HOME/riot-emails-txt" --output "$DATA_HOME/riot-input.mallet" --remove-stopwords --extra-stopwords extra-stopwords --keep-sequence
+$MALLET_HOME/bin/mallet train-topics --input "$DATA_HOME/riot-input.mallet" --num-topics 50 --output-topic-keys "$DATA_HOME/riot-topic-keys" --optimize-interval 20 --num-iterations 2000

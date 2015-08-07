@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Change to the directory containing all the subfolders with pdfs
+# and then run this file in that directory
+
+find . -name '*.pdf' | xargs -n1 pdftotext
+mkdir "$DATA_HOME/riot-emails-txt"
+mv ./**/*.txt "$DATA_HOME/riot-emails-txt/"
