@@ -15,6 +15,15 @@ insight into the themes present in an otherwise unknown collection of documents.
 
 More information on topic modeling is available online.
 
+## Why do I care?
+
+In short, topic modeling can take a large collection of documents, and tell you something
+about the themes in those documents. To use an example from the Baltimore Riot Emails topic
+model below, it's interesting to note that topic 23 seems to be about the Red Line. This tells
+us that city officials were discussing the Red Line during the riots. We didn't have to read
+the emails themselves to find that out. There are also a few topics about the curfew, which
+might mean that this was discussed throughout the emails in several different contexts. 
+
 ## Tooling
 
 The LDA implementation is provided by the open source natural language processing tool
